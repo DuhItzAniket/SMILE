@@ -51,7 +51,7 @@ Traditional ECD screening methods are:
 ### Solution
 
 SMILE addresses these challenges with:
-- 🤖 **XGBoost ML Model** - 99.5% accuracy
+- 🤖 **Autoencoders & DL Model** - 95.6% accuracy
 - 👁️ **Computer Vision** - Emotion & pose analysis
 - 📱 **Modern Web Interface** - Responsive & intuitive
 - 🔐 **Role-Based Access** - AWW, Supervisor, Admin
@@ -61,8 +61,7 @@ SMILE addresses these challenges with:
 
 ## ✨ Key Features
 
-### 🧠 Machine Learning
-- **XGBoost Classifier** with 99.5% accuracy
+### 🧠 Deep Learning
 - **70+ Engineered Features** from 12 data domains
 - **Multi-Class Prediction** (Low/Medium/High risk)
 - **Confidence Scoring** for each prediction
@@ -119,7 +118,7 @@ SMILE addresses these challenges with:
 ┌─────────────────────────────────────────────────────────────┐
 │                    Services & ML Layer                      │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐                   │
-│  │ XGBoost  │  │  OpenCV  │  │MediaPipe │                   │
+│  │   DL     │  │  OpenCV  │  │MediaPipe │                   │
 │  │  Model   │  │ Emotion  │  │   Pose   │                   │
 │  └──────────┘  └──────────┘  └──────────┘                   │
 └─────────────────────────────────────────────────────────────┘
@@ -153,7 +152,7 @@ SMILE addresses these challenges with:
 | Pydantic | 2.5.0 | Data Validation |
 | Uvicorn | 0.24.0 | ASGI Server |
 
-### Machine Learning
+### Deep Learning
 | Technology | Version | Purpose |
 |------------|---------|---------|
 | XGBoost | 2.0.2 | Classification |
