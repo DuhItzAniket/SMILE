@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./smile.db
+      - SECRET_KEY=your-secret-key-change-in-production
+    volumes:
+      - ./backend:/app/backend
+      - ./ml/models:/app/ml/models
+      - smile-data:/app/backend
+    restart: unless-stopped
+
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    command: sh -c "npm install && npm run dev -- --host"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  smile-data:
