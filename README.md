@@ -1,4 +1,4 @@
-# SMILE v2.0 🌟
+# SMILE 🌟
 ## Smart Monitoring & Intelligent Learning Environment
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
